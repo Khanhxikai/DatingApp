@@ -2,6 +2,8 @@
   "name": "client",
   "version": "0.0.0",
   "scripts": {
+    "ngcc": "ngcc --properties es2015 browser main module --async false --first-only",
+    "postinstall": "npm run ngcc",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -25,6 +27,7 @@
     "ng2-file-upload": "^3.0.0",
     "ngx-bootstrap": "^10.2.0",
     "ngx-spinner": "^15.0.1",
+    "ngx-timeago": "^2.0.0",
     "ngx-toastr": "^16.1.0",
     "rxjs": "~7.8.0",
     "toastr": "^2.1.4",
